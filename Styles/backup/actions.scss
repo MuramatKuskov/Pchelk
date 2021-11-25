@@ -1,0 +1,163 @@
+main{background: #FAFAF9;}
+.nav__sublist{margin-top: 10px;}
+.actions {border: 1px solid #A5AAAF;padding-bottom:87px;margin-bottom:120px;
+
+	&__title {font-size: 44px;margin: 80px 0;
+	}
+
+	&__row {display:flex;
+	}
+
+	&__column {display:flex;flex-direction:column;margin-left: 10%;
+	}
+
+	&__nav {display:flex;justify-content: space-between;
+	}
+
+	&__src {
+		& input{width: 465px;height: 45px;border-radius: 26px;padding-left: 17px;
+		border: 1px solid #CED0D2;background: no-repeat 95% url('../Source/Logos\,\ Icons/Vector.png')}
+	}
+
+	&__filter {width: 265px;height: 47px;border-radius: 26px;border: 1px solid #CED0D2;
+		display: flex;
+		& select {margin: 0 0 0 15px;width: 90%;cursor: pointer;font-size: 16px;color: #DB4E66;
+		appearance: none;background: no-repeat 215px url('../Source/Logos\,\ Icons/Vector 26vertical.png');
+			& option[selected]{color: #000;}
+		}
+	}
+
+	&__block {
+	}
+
+	&__subtitle {color: #A5AAAF;font-size: 30px;margin: 64px 0 40px;
+	}
+
+	&__subrow {display:flex;flex-wrap: wrap;justify-content: space-around;
+	}
+
+	&__action {margin: 0 0 33px 0;
+	}
+
+	&__btn {color: #DB4E66;font-size: 16px;font-weight: bold;margin: 0 auto;
+		text-transform: uppercase;width: fit-content;margin-top: 37px;cursor: pointer;
+	}
+}
+.filter {
+
+	&__column {display:flex;flex-direction:column;min-width: 240px;
+	}
+
+	&__title {color: #A5AAAF;margin-bottom: 40px;font-size: 24px;
+	}
+
+	&__form {font-size: 16px;
+		& input{margin: 8px 8px 0 0;}
+	}
+
+	&__category {font-size: 18px;font-weight: bold;
+		&::after{content: '';display: block;height: 1px;min-width: 100px;border: 1px solid #CED0D2;
+		margin: 7px 0 15px 0;}
+	}
+}
+.action {border-radius: 14px;border: 1px solid #CED0D2;width: 365px;padding:22px 20px 37px;
+	background: #fff;
+
+	&__row {display:flex;margin-bottom: 24px;
+	}
+
+	&__img {min-width:118px;margin: 0 16px 0 0;
+		& img{width: 100%;}
+	}
+
+	&__column {display:flex;flex-direction:column;
+	}
+
+	&__title {font-size: 24px;font-weight: bold;line-height: 28px;margin: -3px 0 15px;
+	}
+
+	&__date {font-size: 16px;color: #A5AAAF;
+	}
+
+	&__text {font-size: 18px;
+		& p:last-child{margin: 30px 0 16px;}
+		& span {font-weight: bold;text-decoration: underline;}
+	}
+
+	&__tags {color: #A5AAAF;display:flex;
+		& p{font-size: 16px;margin-right:10px;height:15px;
+			&:last-child{font-size: 18px;text-decoration: underline;cursor: pointer;}
+		}
+	}
+}
+@media (max-width:1200px) {
+	.actions {
+		&__src{& input{width: 365px;}}
+		&__filter{width: 230px;
+			& select{background-position: 178px 18px;}
+		}
+	}
+	.action{width: 310px;}
+}
+@media (max-width:992px) {
+	.actions {
+		&__nav{flex-direction:column;width: 150%;margin: 0 0 0 -51.9%;}
+		&__src{
+			& input{width: 100%;height: 66px;border-radius: 34px;}
+		}
+		&__filter{width: 265px;height: 66px;border-radius: 34px;margin: 20px 0 0 0;
+			& select{background-position: 200px 25px;background-size: 17px;}
+		}
+		&__column{margin-left: 8%;}
+	}
+	.filter{
+		&__column{min-width: 200px;margin-top: 220px;}
+	}
+	.action{width: 100%;}
+}
+@media (max-width:767px) {
+	.actions{border: unset;
+		&__nav{width: 149%;margin: 0 0 0 -49%;}
+	}
+	.filter{
+		&__column{min-width: 150px;}
+	}
+}
+@media (max-width:640px) {
+	.actions {
+		&__title{font-size: 33px;margin: 55px 0 35px;}
+		&__nav{width: 109%;margin: 0 0 0 -9%;}
+		&__subtitle{font-size: 28px;}
+		&__filter{margin: 20px 0 280px 0;font-size: 16px;}
+		&__column{margin-left: 8%;}
+	}
+	.filter{
+		&__column{position: absolute;top: 370px;padding: 18px 38% 50px 24px;
+			box-shadow: 0px 4px 9px #D3D3D3;border-radius: 21px;max-width: 80%;
+			background: no-repeat 90% 10.5% url('../Source/Logos\,\ Icons/Vector 26vertical.png');
+		}
+		&__title{color: #DB4E66;text-transform: uppercase;width: 185%;cursor: pointer;
+		padding: 10px 0;}
+		&__form{min-width: 175%;}
+	}
+	.action{
+		&__text{font-size: 16px;}
+	}
+}
+@media (max-width:480px) {
+	.actions{
+		&__nav{max-width: 100%;}
+		&__title{font-size: 28px;}
+		&__filter{& select {font-size: 14px;}}
+		&__subtitle{font-size: 24px;}
+		&__column{margin: 0;}
+	}
+	.filter{
+		&__title{font-size: 14px;}
+		&__category{font-size: 16px;}
+	}
+	.action{
+		&__img{min-width: 92px;}
+		&__title{font-size: 20px;}
+	}
+}
