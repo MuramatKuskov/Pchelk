@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./Styles/CSS reset.css">
+	<link rel="stylesheet" href="./Styles/Header/nav.css">
+	<link rel="stylesheet" href="./Styles/footer.css">
+	<link rel="stylesheet" href="./Styles/cards.css">
+	<title>Пчёлка</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header__row">
+				<div class="header__logo">
+					<a href="./index.html"><img src="./Source/Logos, Icons/Main_Logo.png" alt="">
+						<p class="header__desc">Лаборатория игр</p>
+					</a>
+				</div>
+				<div class="header__subrow">
+					<div class="header__phone phone">8-(000)-000-00-00 МСК (9-21)</div>
+					<div class="header__src">
+						<form action="#" method="post" enctype="multipart/form-data" cf-form>
+							<input tabindex="1" placeholder="Поиск по сайту...." type="text" name="src" />
+							<img src="./Source/Logos, Icons/Vector.png" alt="">
+						</form>
+					</div>
+					<div class="header__basket">
+						<a href="./basket.html"><img src="./Source/Logos, Icons/Group 41.png" alt=""></a>
+					</div>
+					<div class="header__profile">
+						<a href=""><img src="./Source/Logos, Icons/Group 40.png" alt=""></a>
+					</div>
+					<div class="header__burger"><img src="./Source/Logos, Icons/МЕНЮ ИКОНКА.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<div class="nav__row">
+					<div class="nav__phone phone">8-(000)-000-00-00 МСК (9-21)</div>
+					<ul class="nav__list">
+						<li class="nav__list-item"><a href='./catalog.html'>Каталог</a></li>
+						<li class="nav__list-item"><a href='./actions.html'>Акции</a></li>
+						<li class="nav__list-item"><a href='./reviews.html'>Отзывы</a></li>
+						<li class="nav__list-item"><a href='./delivery.html'>Доставка и оплата</a></li>
+						<div class="nav__block">
+							<li class="nav__list-item"><a href='./about.html'>О компании</a></li>
+							<li class="nav__list-item_col"><a href='./about.html'>О нас</a></li>
+							<li class="nav__list-item_col"><a href='./contact.html'>Контакты</a></li>
+							<li class="nav__list-item_col"><a href='./documents.html'>Документы</a></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<ul class="nav__sublist">
+				<li class="nav__sublist-item"><a href="./index.html">Главная</a></li>
+				<li class="nav__sublist-img"><img src="./Source/Logos, Icons/Vector 26.png" alt=""></li>
+				<li class="nav__sublist-item"><a href="./actions.html">Каталог</a></li>
+			</ul>
+		</div>
+		<div class="cards">
+			<div class="container">
+				<div class="cards__title">Каталог игр</div>
+				<div class="cards__row">
+					<div class="filter__column">
+						<div class="filter__row">
+							<h5 class="filter__title">Фильтр</h5>
+							<p class="filter__clear">Очистить</p>
+						</div>
+						<form action="#" method="post" enctype="multipart/form-data" class="filter__form">
+							<p class="filter__class">Цена</p>
+							<div class="filter__fromto fromto">
+								<div class="fromto__row">
+									<div class="fromto__col">
+										<p>От</p>
+										<input type="text" tabindex="3" placeholder="600" value="600" name="minprice">
+									</div>
+									<span>-</span>
+									<div class="fromto__col">
+										<p>До</p>
+										<input type="text" tabindex="4" placeholder="4000" value="4000" name="maxprice">
+									</div>
+								</div>
+								<div class="fromto__slider">
+									<input type="range" min="600" max="4000" step="1" value="600" name="price">
+									<input type="range" min="600" max="4000" step="1" value="4000" name="price">
+								</div>
+							</div>
+							<p class="filter__class">Возраст</p>
+							<div class="filter__fromto fromto">
+								<div class="fromto__row">
+									<div class="fromto__col">
+										<p>От</p>
+										<input type="text" tabindex="5" placeholder="4" value="4" name="minage">
+									</div>
+									<span>-</span>
+									<div class="fromto__col">
+										<p>До</p>
+										<input type="text" tabindex="6" placeholder="12" value="12" name="maxage">
+									</div>
+								</div>
+								<div class="fromto__slider">
+									<input type="range" min="4" max="12" step="1" placeholder="4" value="4" name="age">
+									<input type="range" min="4" max="12" step="1" placeholder="12" value="12" name="age">
+								</div>
+							</div>
+							<p class="filter__class">Сложность</p>
+							<input tabindex="7" type="checkbox" name="diff" value="easy">Простая<br>
+							<input tabindex="8" type="checkbox" name="diff" value="medium">Средняя<br>
+							<input tabindex="9" type="checkbox" name="diff" value="high">Усложненная
+							<p class="filter__class">Категория</p>
+							<input tabindex="10" type="checkbox" name="category" value="holiday">Для праздника<br>
+							<input tabindex="11" type="checkbox" name="category" value="evolving">Развивающие<br>
+							<input tabindex="12" type="checkbox" name="category" value="travel">В дорогу
+							<p class="filter__class">Количество игроков</p>
+							<div class="filter__fromto fromto">
+								<div class="fromto__row">
+									<div class="fromto__col">
+										<p>От</p>
+										<input type="text" tabindex="13" placeholder="2" value="2" name="minquant">
+									</div>
+									<span>-</span>
+									<div class="fromto__col">
+										<p>До</p>
+										<input type="text" tabindex="14" placeholder="8" value="8" name="maxquant">
+									</div>
+								</div>
+								<div class="fromto__slider">
+									<input type="range" min="2" max="8" step="1" value="2" name="quant">
+									<input type="range" min="2" max="8" step="1" value="8" name="quant">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="cards__column">
+						<div class="cards__nav">
+							<form action="#" method="post" class="cards__src" enctype="multipart/form-data">
+								<input tabindex="1" placeholder="Поиск по акциям и новостям..." type="text" name="src" />
+							</form>
+							<form action="#" method="post" class="cards__filter" enctype="multipart/form-data">
+								<select tabindex="2" type="list" name="filter-first">
+									<option selected value="new">Сначала: популярные</option>
+									<option selected value="popular">Сначала: новые</option>
+									<option selected value="cheap">Сначала: дешевые</option>
+								</select>
+							</form>
+						</div>
+						<div class="cards__block">
+							<div class="cards__subrow">
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+								<div class="cards__card_slim card_slim">
+									<div class="card__age">Возраст: 6+</div>
+									<div class="card__media"></div>
+									<a href='' class="card__title_slim">Настольная игра “Сказочное королевство” с дополненной
+										реальнос..</a>
+									<ul class="card__list">
+										<li id="time">Время игры: 60-90 мин</li>
+										<li id="players">Кол-во игроков: 2-6</li>
+										<li id="prep">Подготовка: 0 мин</li>
+										<li id="place">Места: любые</li>
+										<li id="diff">Сложность: простая</li>
+									</ul>
+									<div class="card__price">
+										<p>3600₽</p>
+									</div>
+									<div class="cards__btn btn">Добавить в корзину</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer__row">
+				<div class="footer__column">
+					<div class="footer__logo"></div>
+					<div class="footer__contact">
+						<div class="footer__phone">8(000) 000 00 00 МСК (9-21)</div>
+						<div class="footer__mail">pchelkashop.ru@mail.ru</div>
+					</div>
+					<div class="footer__src">
+						<form action="#" method="post" enctype="multipart/form-data">
+							<input type="text" name="search" placeholder="Поиск по сайту....">
+						</form>
+					</div>
+				</div>
+				<div class="footer__subrow">
+					<div class="footer__column_right">
+						<ul class="footer__list">
+							<li class="footer__list-item"><a href="">Акции и новости</a></li>
+							<li class="footer__list-item"><a href="">Игры для праздника</a></li>
+							<li class="footer__list-item"><a href="">Развивающие игры</a></li>
+							<li class="footer__list-item"><a href="">Игры в дорогу</a></li>
+						</ul>
+					</div>
+					<div class="footer__column_right">
+						<ul class="footer__list">
+							<li class="footer__list-item"><a href="./reviews.html">Отзывы</a></li>
+							<li class="footer__list-item"><a href="./delivery.html">Доставка и оплата</a></li>
+							<li class="footer__list-item"><a href="./delivery.html">Возврат</a></li>
+							<li class="footer__list-item"><a href="./about.html">О нас</a></li>
+							<li class="footer__list-item"><a href="./contact.html">Контакты</a></li>
+							<li class="footer__list-item"><a href="./documents.html">Документы</a></li>
+						</ul>
+					</div>
+					<div class="footer__column_right">
+						<ul class="footer__list">
+							<li class="footer__list-item"><a href="">Личный кабинет</a></li>
+							<li class="footer__list-item"><a href="">Партнерам</a></li>
+							<li class="footer__list-item"><a href="">Групповой заказ</a></li>
+							<li class="footer__list-item"><a href="">Постоянный покупатель</a></li>
+						</ul>
+						<div class="footer__social">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+							<img src="" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__row_black">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a href="">Политика конфиденциальности</a>
+					<a href="">Публичная оферта</a>
+				</div>
+				<p>Все права защищены 2021</p>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="./JS/filter.js"></script>
+<script src="./JS/nav.js"></script>
+
+</html>
