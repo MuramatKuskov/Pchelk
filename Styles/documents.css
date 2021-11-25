@@ -1,0 +1,123 @@
+main {
+  overflow: hidden;
+}
+
+.documents {
+  padding: 90px 0 230px;
+  border: 1px solid #A5AAAF;
+  width: 101%;
+  background: no-repeat 0px 282px/2000px 430px url("../Source/Backgrounds/Vector 40.png");
+}
+
+.documents__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.documents__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.4px;
+  margin: 32px 0 90px;
+  color: #5B636B;
+}
+
+.documents__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 975px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.documents__item {
+  width: 219px;
+  height: 276px;
+  background: #E3E3E3;
+}
+
+.documents__item:not(:last-child) {
+  margin: 0 30px 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .documents {
+    background-position: -550px 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .documents__row {
+    width: 100%;
+  }
+  .documents__item {
+    width: 17vw;
+    height: 22vw;
+    min-width: 127px;
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  .documents {
+    background-position: -350px 243px;
+    background-size: 1200px 330px;
+    border: none;
+  }
+  .documents__item:not(:last-child) {
+    margin: 0 20px 20px 0;
+  }
+  .documents__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .documents__subtitle {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 721px) {
+  .documents {
+    background-position: -600px 300px;
+    background-size: 2000px 430px;
+    padding-bottom: 120px;
+  }
+  .documents__row {
+    width: 70%;
+  }
+}
+
+@media (max-width: 538px) {
+  .documents__row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 488px) {
+  .documents {
+    padding-top: 56px;
+    background-position: -800px 210px;
+    background-size: 2000px 400px;
+  }
+  .documents__subtitle {
+    margin: 24px 0 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .documents__row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .documents__item {
+    min-width: 120px;
+    min-height: 150px;
+  }
+  .documents__item:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+}

@@ -1,0 +1,277 @@
+main{background: #FAFAF9;overflow: hidden;}
+.nav__sublist{margin-top: 10px;}
+.cards {border: 1px solid #A5AAAF;padding-bottom:87px;margin-bottom:120px;width: 101%;
+
+	&__title {font-size: 44px;margin: 80px 0;font-weight: 500;
+	}
+
+	&__row {display:flex;
+	}
+
+	&__column {display:flex;flex-direction:column;margin-left: 10%;;
+	}
+
+	&__nav {display:flex;justify-content: space-between;
+	}
+
+	&__src {
+		& input{width: 465px;height: 45px;border-radius: 26px;padding-left: 17px;
+		border: 1px solid #CED0D2;background: no-repeat 95% url('../Source/Logos\,\ Icons/Vector.png')}
+	}
+
+	&__filter {width: 265px;height: 47px;border-radius: 26px;border: 1px solid #CED0D2;
+		display: flex;
+		& select {margin: 0 0 0 15px;width: 90%;cursor: pointer;font-size: 16px;color: #DB4E66;
+		appearance: none;background: no-repeat 215px url('../Source/Logos\,\ Icons/Vector 26vertical.png');
+			& option[selected]{color: #000;}
+		}
+	}
+
+	&__block {padding-top: 64px;
+	}
+
+	&__subtitle {color: #A5AAAF;font-size: 30px;margin: 0 0 40px;
+	}
+
+	&__subrow {display:flex;flex-wrap: wrap;justify-content: space-around;
+	}
+
+	&__card {margin: 0 0 33px 0;
+	}
+
+	&__btn {color: #fff;font-size: 16px;font-weight: 500;margin: 16px auto 0;width: fit-content;
+		text-transform: uppercase;cursor: pointer;background:#F2B236;
+		border-radius: 10px;padding: 13px 20px 10px;box-shadow: 0px 3px 7px 0px #FFE9BF;
+		&_thin{color: #DB4E66;font-size: 16px;font-weight: bold;margin: 37px auto 0;
+		text-transform: uppercase;width: fit-content;cursor: pointer;}
+	}
+}
+.filter {
+
+	&__row{display: flex; justify-content: space-between;}
+
+	&__clear{color: #5B636B;font-size: 16px;
+		&:hover{cursor: pointer;}
+	}
+
+	&__column {display:flex;flex-direction:column;min-width: 240px;
+	}
+
+	&__title {color: #A5AAAF;margin-bottom: 40px;font-size: 24px;
+	}
+
+	&__form {font-size: 16px;
+		& input{margin: 8px 8px 0 0;
+			&[type='text']{
+			}
+			&[type='range']{
+				position: absolute;
+				appearance: none;
+				width: 210px;
+				height: 0;
+				border: 2px solid #F2B236;
+				&::-webkit-slider-thumb{			//тумблеры вебкит
+					pointer-events: all;
+					z-index: 10;
+					position: relative;
+					appearance: none;
+					width: 14px;height: 14px;
+					background: #fff;
+					border: 3px solid #F2B236;
+					border-radius: 50%;
+				}
+				&::-moz-range-thumb{					//тумблеры моз
+					pointer-events: all;
+					z-index: 10;
+					appearance: none;
+					width: 14px;height: 14px;
+					background: #fff;
+					border: 3px solid #F2B236;
+					border-radius: 50%;
+				}
+				&::-ms-thumb{							//тумблеры мс
+					pointer-events: all;
+					z-index: 10;
+					appearance: none;
+					width: 14px;height: 14px;
+					background: #fff;
+					border: 3px solid #F2B236;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	&__class {font-size: 18px;font-weight: bold;margin-top:30px;
+		&:nth-child(3), &:nth-child(5){margin-top: 50px;}
+		&::after{content: '';display: block;height: 1px;min-width: 100px;border: 1px solid #CED0D2;
+		margin: 7px 0 15px 0;}
+	}
+
+	&__fromto{}
+}
+.fromto{
+	&__row{display: flex;justify-content: space-around;margin-bottom:10px;
+		& span{height: fit-content;position: relative;top: 29px;right: 5px;}
+	}
+
+	&__col{display: flex;flex-direction: column;
+		& input{width: 69px;height:32px;padding:0 10px;border-radius: 4px;border: 1px solid #A5AAAF;}
+	}
+}
+.card {border-radius: 14px;border: 1px solid #CED0D2;width: 365px;padding:22px 20px 37px;
+	background: #fff;
+
+	&_slim{width: 265px;border: 1px solid #CED0D2;border-radius: 14px;padding:22px 11px 30px 19px;
+		background: #fff;margin-bottom:30px;}
+
+	&__row {display:flex;
+	}
+
+	&__age{font-size: 16px;float: right;color:#fff;border-radius: 6px;padding: 10px 15px;
+		background:#90C1BF;margin-bottom: -200px;}					//catalog
+
+	&__media{background: no-repeat url('../Source/Images/Rectangle\ 65.png');width: 229px;
+		height: 229px;margin: 0 auto;}
+
+	&__img {min-width:118px;margin: 0 16px 0 0;margin-bottom: 24px;
+		& img{width: 100%;}
+	}
+
+	&__column {display:flex;flex-direction:column;
+	}
+
+	&__title {font-size: 24px;font-weight: bold;line-height: 28px;margin: -3px 0 15px;
+		&_slim{font-size: 18px;font-weight: bold;line-height: 28px;margin: -3px 0 15px;}
+	}
+
+	&__date {font-size: 16px;color: #A5AAAF;
+	}
+
+	&__text {font-size: 18px;
+		& p:last-child{margin: 30px 0 16px;}
+		& span {font-weight: bold;text-decoration: underline;}
+	}
+
+	&__list{font-size: 16px;color: #5B636B;margin:16px 0;						//catalog
+		& li{line-height: 25.6px;padding-left: 25px;}
+		& #time{background: no-repeat 0px 4px url('../Source/Logos\,\ Icons/uil_hourglass.png')}
+		& #players{background: no-repeat 0px 4px url('../Source/Logos\,\ Icons/uil_grin.png')}
+		& #prep{background: no-repeat 0px 4px url('../Source/Logos\,\ Icons/uil_history.png')}
+		& #place{background: no-repeat 0px 4px url('../Source/Logos\,\ Icons/uil_basketball.png')}
+		& #diff{background: no-repeat 0px 4px url('../Source/Logos\,\ Icons/uil_brain.png')}
+	}
+
+	&__tags {color: #A5AAAF;display:flex;
+		& p{font-size: 16px;margin-right:10px;height:15px;
+			&:last-child{font-size: 18px;text-decoration: underline;cursor: pointer;}
+		}
+	}
+
+	&__price{color: #DB4E66;font-weight: 500;display: flex;justify-content: center;}
+	&__btn{margin-top: 0;}
+}
+
+@media (max-width:1200px) {
+	.cards {
+		&__src{& input{width: 365px;}}
+		&__filter{width: 230px;
+			& select{background-position: 178px 18px;}
+		}
+	}
+	.card{width: 310px;}
+}
+
+@media (max-width:992px) {
+	.cards {
+		&__nav{flex-direction:column;width: 150%;margin: 0 0 0 -51.9%;}
+		&__src{
+			& input{width: 100%;height: 66px;border-radius: 34px;}
+		}
+		&__filter{width: 265px;height: 66px;border-radius: 34px;margin: 20px 0 0 0;
+			& select{background-position: 200px 25px;background-size: 17px;}
+		}
+		&__column{margin-left: 8%;}
+	}
+	.filter{
+		&__column{min-width: 200px;margin-top: 220px;}
+		&__form{
+			& input[type='range']{
+				width: 180px;
+			}
+		}
+	}
+	.card{width: 100%;}
+}
+
+@media (max-width:767px) {
+	.cards{border: unset;
+		&__nav{width: 149%;margin: 0 0 0 -49%;}
+		&__column{margin-left: 10vw;}
+		&__subrow{max-width: fit-content;}
+	}
+	.filter{
+		&__column{min-width: 178px;}
+		&__form{
+			& input[type='range']{
+				width: 160px;
+			}
+		}
+	}
+}
+
+@media (max-width:640px) {
+	.cards {
+		&__title{font-size: 33px;margin: 55px 0 35px;}
+		&__nav{width: 109%;margin: 0 0 0 -9%;}
+		&__subtitle{font-size: 28px;}
+		&__filter{margin: 20px 0 280px 0;font-size: 16px;}
+		&__column{margin-left: 8%;width: 100%;}
+		&__block{transition: margin 2s;}
+	}
+	.filter{
+		&__row{flex-direction: column;}
+		&__column{position: absolute;top: 370px;padding: 18px 24px 50px 24px;width: 80%;
+			box-shadow: 0px 4px 9px #D3D3D3;border-radius: 21px;height: 80px;overflow: hidden;
+			transition: height 2s;
+		}
+		&__title{color: #DB4E66;text-transform: uppercase;width: 100%;cursor: pointer;
+		padding: 10px 0;background: no-repeat 90% 50% url('../Source/Logos\,\ Icons/Vector 26vertical.png');}
+		&__form{
+			& input[type='range']{
+				width: 83%;
+			}
+		}
+	}
+	.card{
+		&__text{font-size: 16px;}
+	}
+}
+
+@media (max-width:480px) {
+	.cards{
+		&__nav{max-width: 100%;}
+		&__title{font-size: 28px;}
+		&__filter{& select {font-size: 14px;}}
+		&__subtitle{font-size: 24px;}
+		&__column{margin: 0;}
+	}
+	.filter{
+		&__title{font-size: 14px;}
+		&__category{font-size: 16px;}
+	}
+	.card{
+		&__img{min-width: 92px;}
+		&__title{font-size: 20px;}
+	}
+}
+
+@media (max-width:400px) {
+	.filter{
+		&__form{
+			& input[type='range']{
+				width: 78%;
+			}
+		}
+	}
+}

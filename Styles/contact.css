@@ -1,0 +1,135 @@
+main {
+  overflow: hidden;
+}
+
+.contact {
+  border: 1px solid #A5AAAF;
+  width: 101%;
+  padding: 90px 0 110px;
+  margin-bottom: 130px;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 765px;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.contact__phone {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 43.4px;
+  padding: 80px 0 50px 50px;
+  background: no-repeat 0px 80px url("../Source/Logos, Icons/Phone.png");
+}
+
+.contact__comment {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #5B636B;
+}
+
+.contact__mail {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33.6px;
+  padding-left: 40px;
+  background: no-repeat 0px 5px url("../Source/Logos, Icons/Mail.png");
+}
+
+.contact__info {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33.6px;
+  margin: 50px 0;
+}
+
+.contact__adress {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33.6px;
+}
+
+.contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 228px;
+  margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+  .contact {
+    border: none;
+    margin-bottom: 0;
+  }
+  .contact__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__column {
+    width: 420px;
+  }
+  .contact__social {
+    margin-top: 50px;
+  }
+  .contact__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .contact__phone {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    background-size: 20px;
+    padding-left: 30px;
+  }
+  .contact__mail {
+    font-size: 18px;
+    line-height: 21px;
+    background-size: 20px;
+    padding-left: 27px;
+  }
+  .contact__info {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .contact__adress {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 530px) {
+  .contact__column {
+    width: 100%;
+  }
+}

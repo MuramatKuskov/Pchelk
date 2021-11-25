@@ -1,0 +1,98 @@
+main{overflow: hidden;}
+.reviews {padding: 77px 0 120px;border:1px solid #A5AAAF;margin-bottom:120px;width: 101%;
+	background:#FAFAF9;
+
+	&__title {font-size: 44px;line-height: 52px;font-weight: 500;
+	}
+
+	&__subtitle {font-size: 24px;line-height: 28px;font-weight: 500;margin: 25px 0 80px;
+		color: #5B636B;
+	}
+
+	&__column {display: flex;flex-direction: column;align-items: center;
+	}
+
+	&__row{display: flex;flex-wrap: wrap;justify-content: space-around;}
+
+	&__item {
+	}
+
+	&__btn {
+
+		&_slim {margin-top: 64px;font-size: 16px;color: #DB4E66;cursor: pointer;
+			text-transform: uppercase;font-weight: 500;
+		}
+	}
+}
+.item {padding: 35px 35px 41px 43px;border-radius:14px;background:#fff;margin: 0 0 24px 0;
+	box-shadow:0px 4px 9px #D3D3D3;
+
+	&__row {display: flex;justify-content: space-between;
+	}
+
+	&__profile {display: flex;
+	}
+
+	&__img {
+		& img{max-width: 100%;}
+	}
+
+	&__col {display: flex;flex-direction: column;justify-content: space-around;margin-left: 35px;
+	}
+
+	&__name {font-size: 24px;line-height: 28px;font-weight: 500;
+	}
+
+	&__date {font-size: 16px;color: #A5AAAF;
+	}
+
+	&__rating {color: #F2B236;font-size: 38px;display:flex;align-items:flex-end;flex-wrap:wrap;
+		& span {font-size: 21px;}
+	}
+
+	&__stars{display: flex;flex-wrap: nowrap;}
+
+	&__subrow {display: flex;align-self:flex-end;
+		& div{width: 82px;height: 82px;background: #E8ECEB;margin-left: 5px;}
+	}
+
+	&__text {font-size: 16px;margin-top: 15px;position: relative;line-height: 24px;
+	}
+
+	&__btn{text-decoration: underline;padding: 0;
+		& a{color: #F2B236;}
+	}
+}
+@media (max-width:992px) {
+	.item{
+		&__subrow{& div{width: 92px;height: 92px;}}
+		&__col{margin-left: 20px;}
+		&__rating{& img{width: 20px;}}
+	}
+}
+@media (max-width:767px) {
+	.item{
+		&__row{flex-direction: column;}
+		&__profile{margin-bottom: 125px;}
+		&__text{& p{position: absolute;width: 105%;bottom: 117px;}}
+		&__subrow{align-self:center;
+			& div{width: 100px;height: 100px;}
+		}
+		&__rating{justify-content: unset;font-size: 25px;}
+	}
+}
+@media (max-width:480px) {
+	.item{max-width: 100%;padding: 30px 20px;
+		&__profile{margin-bottom: 145px;}
+		&__img{width: 100px;min-width: 100px;}
+		&__name{font-size: 18px;}
+		&__text{& p{bottom: 98px;}}
+		&__subrow{& div{width: 80px;height: 80px;}}
+	}
+}
+@media (max-width:397px) {
+	.item{
+		&__text{& p{bottom: 85px;line-height: 18px;}}
+		&__subrow{& div{width: 70px;height: 70px;}}
+	}
+}

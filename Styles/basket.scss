@@ -1,0 +1,231 @@
+.basket {padding: 90px 0 120px;
+
+	&__title {font-size: 44px;line-height: 52px;font-weight: 700;
+	}
+
+	&__quant {
+	}
+
+	&__row {display: flex;justify-content: space-between;margin-top: 50px;
+	}
+
+	&__column {display: flex;flex-direction: column;
+		&:first-of-type{flex: 0 1 65%;}
+	}
+
+	&__item {margin-bottom: 24px;
+	}
+
+	&__total {border:1px solid #CED0D2;border-radius:14px;padding:35px 35px 48px 30px;
+		width: 365px;
+	}
+
+	&__goods {display: flex;justify-content: space-between;font-size: 16px;line-height: 25.6px;
+	}
+
+	&__price {
+	}
+
+	&__percent {display: flex;justify-content: space-between;font-size: 18px;line-height: 21.3px;
+		& p:first-of-type{margin: 3px 0 8px;}
+	}
+
+	&__discount {
+	}
+
+	&__sum {display: flex;justify-content: space-between;font-size: 18px;line-height: 21.3px;
+		font-weight: 700;
+	}
+
+	&__check {
+	}
+
+	&__btn {font-size: 16px;line-height: 19px;font-weight: 700;text-transform: uppercase;
+		padding: 18px 0;background: #DB4E66;box-shadow: 2px 4px 9px #FBCCD4;color: #fff;
+		border-radius: 14px;margin: 48px auto 24px;min-width: 100%;text-align: center;
+		&::after{
+			content: '';height:1px;width: 100%;background: #CED0D2;display: block;
+			position: relative;top: 42px;
+		}
+		&:hover{cursor: pointer;}
+	}
+
+	&__promo {display: flex;justify-content:space-between;margin:48px 0 0 0;
+		& input{padding: 11px 0 11px 12px;background: #FAFAF9;border: 1px solid #CED0D2;
+			border-radius: 8px 0 0 8px;
+		}
+		& button {background: #FAFAF9;border: 1px solid #CED0D2;padding: 11px 18px;
+			border-radius: 0 8px 8px 0;text-transform: uppercase;font-weight: 700;
+		}
+	}
+
+	&__card {padding: 25px 103px;background: linear-gradient(to right, #F2B236, #FF9C1A);
+		border-radius: 12px;box-shadow: 0px 5px 13px #EBE7E0;text-align: center;margin-top: 8px;
+	}
+
+	&__text {padding: 60px 0 14px;font-size: 24px;line-height: 28.4px;font-weight: 700;
+		color: #FAFAF9;
+		background: no-repeat top center url('../Source/Logos\,\ Icons/uil_fire.png');
+	}
+
+	&__shield {padding: 14px 58px;background: #fff;color: #DB4E66;font-size: 30px;
+		line-height: 35.5px;font-weight: 700;border-radius: 30px;
+	}
+}
+
+.item {display: flex;border:1px solid #CED0D2;border-radius:14px;padding:35px 35px 35px 22px;
+	justify-content: space-between;background:#FAFAF9;
+
+	&__acc{display: flex;justify-content: space-between;flex: 0 1 60%;}
+
+	&__img {background: #CECECE;padding:71.5px;box-shadow: 0px 5px 13px #EBE7E0;
+		border-radius: 12px;
+	}
+
+	&__col {flex: 0 1 265px;
+	}
+
+	&__text {font-size: 18px;line-height: 21.3px;font-weight: 700;margin: 13px 0 16px;
+	}
+
+	&__artic {font-size: 16px;line-height: 25.6px;color: #A5AAAF;
+	}
+
+	&__row{display: flex;justify-content: space-between;flex: 0 1 25%;}
+
+	&__quant {display: flex;justify-content: space-between;border:1px solid #A5AAAF;
+		border-radius: 4px;margin-top: 13px;height: fit-content;padding: 7px 10px 5px;width: 65px;
+		&:hover{cursor: pointer;}
+	}
+
+	&__num {
+		&:hover{cursor: default;}
+	}
+
+	&__price {margin-top: 13px;
+		& s {font-size: 18px;line-height: 21.3px;font-weight: 700;color: #A5AAAF;}
+		& p{font-size: 22px;line-height: 28.4px;font-weight: 700;color: #DB4E66;}
+	}
+
+	&__trash {align-self: flex-end;
+		&:hover{cursor: pointer;}
+	}
+}
+
+@media (max-width:1200px) {
+	.basket{
+		&__total{padding:35px 20px 48px 20px;width: auto;}
+		&__btn{padding: 18px 0;}
+		&__card{padding:25px 50px;}
+	}
+	.item{
+		&__acc{flex: 0 1 73%;}
+		&__row{flex-direction: column;flex: 0 1 10%;}
+		&__quant{order: 2;padding: 9px 17px 5px;width: 85px;height: 40px;}
+		&__price{order: 1;}
+	}
+}
+
+@media (max-width:992px) {
+	.basket{
+		&__row{flex-direction: column;}
+		&__column{
+			&:last-of-type{
+				flex-direction: row;justify-content: space-between;margin-top: 16px;
+			}
+		}
+		&__total{flex: 0 1 50%;}
+		&__card{margin: 0;align-self: baseline;flex: 0 1 46%;}
+		&__promo{
+			& input{width: 60%;}
+			& button{width: 38%;}
+		}
+	}
+	.item{
+		&__acc{flex: 0 1 63%;}
+	}
+}
+
+@media (max-width:767px) {
+	.basket{
+		&__title{font-size: 32px;line-height: 38px;}
+		&__btn{font-size: 14px;line-height: 16.6px;}
+		&__column{
+			&:last-of-type{
+				justify-content: unset;flex: 0 1 100%;
+			}
+		}
+		&__total{flex: 0 1 55%;margin-right: 30px;min-width: 280px;padding: 20px 10px 30px;}
+		&__card{flex: 0 1 40%;padding: 22px 5%;}
+		&__promo{
+			& input, button{padding-left: 1%;}
+		}
+		&__text{font-size: 20px;line-height: 23.7px;}
+		&__shield{font-size: 24px;line-height: 28.4px;}
+	}
+	.item{padding: 19px 23px 21px 22px;
+		&__acc{flex: 0 1 70%;}
+		&__img{padding: 61px}
+		&__col{flex: 0 1 240px;}
+		&__text{font-size: 16px;line-height: 19px;width: 235px;}
+		&__artic{width: fit-content;}
+		&__price{
+			& s{font-size: 16px;line-height: 19px;}
+			& p{font-size: 20px;line-height: 23.7px;}
+		}
+	}
+}
+
+@media (max-width:680px) {
+	.item{padding:15px 10px 25px 10px;}
+}
+
+@media (max-width:640px) {
+	.basket{
+		&__title{font-size: 24px;line-height: 28.4px;}
+		&__column{
+			&:last-of-type{flex-direction: column;
+				
+			}
+		}
+		&__total{flex: 0 1 100%;margin: 0 0 16px 0;min-width: unset;padding: 20px 10px 30px;}
+		&__card{flex: 0 1 100%;width: 100%;}
+		&__shield{font-size: 20px;line-height: 23.7px;width: fit-content;margin: 0 auto;}
+	}
+	.item{
+		&__img{padding: 50px;align-self: baseline;margin-right: 10px;}
+		&__col{flex: 0 1 210px;}
+		&__text{font-size: 16px;line-height: 19px;width: 100%;margin: 0 0 5px 0;}
+		&__price{
+			& s{line-height: 25px;}
+			& p{font-size: 16px;line-height: 19px;}
+		}
+		&__quant{font-size: 16px;width: 55px;height: auto;padding: 9px 5px 9px;}
+	}
+}
+
+@media (max-width:480px) {
+	.item{flex-direction: column;
+		&__acc{justify-content: unset;margin-bottom: 15px;}
+		&__img{margin-right: 5%;padding: 47.5px;}
+		&__text{margin: 0;}
+		&__row{display: inline-flex;flex-direction: row;width: 170px;margin: 0 0 0 50px;}
+		&__price{order:2;display: flex;flex: 0 0 60%;justify-content: space-between;
+			& p {margin-top: 3px;}
+		}
+		&__quant{order:1;font-size: 13px;height: 25px;padding: 5px 10px 0;}
+		&__trash{margin-top: -23px;}
+	}
+}
+
+@media (max-width:375px) {
+	.item{max-width: 270px;
+		&__acc{flex-direction: column;margin: 0;}
+		&__img{padding: 100px;align-self: center;margin-bottom: 10px;}
+		&__col{flex: 0 1 35%;}
+		&__row{margin: 0;}
+	}
+	.basket{
+		&__percent, &__sum{font-size: 16px;}
+	}
+}
